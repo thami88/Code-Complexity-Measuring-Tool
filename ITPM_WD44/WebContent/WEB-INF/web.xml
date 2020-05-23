@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  
+ <servlet>
+  		<servlet-name>codeServlet</servlet-name>
+  		<servlet-class>com.servlet.codeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>codeServlet</servlet-name>
+  		<url-pattern>/codeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>FileUploadServlet</servlet-name>
+  		<servlet-class>com.servlet.FileUploadServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>FileUploadServlet</servlet-name>
+  		<url-pattern>/FileUploadServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>FileSelectServlet</servlet-name>
+  		<servlet-class>com.servlet.FileSelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>FileSelectServlet</servlet-name>
+  		<url-pattern>/FileSelectServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  		<servlet-name>WeightControlStructureServlet</servlet-name>
+  		<servlet-class>com.weightServlet.WeightControlStructureServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>WeightControlStructureServlet</servlet-name>
+  		<url-pattern>/WeightControlStructureServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  		<servlet-name>WeightSizeServlet</servlet-name>
+  		<servlet-class>com.weightServlet.WeightSizeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>WeightSizeServlet</servlet-name>
+  		<url-pattern>/WeightSizeServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  		<servlet-name>WeightVariableServlet</servlet-name>
+  		<servlet-class>com.weightServlet.WeightVariableServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>WeightVariableServlet</servlet-name>
+  		<url-pattern>/WeightVariableServlet</url-pattern>
+  </servlet-mapping>
+  
+  <display-name>ITPM_WD44</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>fileUpload.jsp</welcome-file>
+  </welcome-file-list>
+  
+</web-app>
+</element>
